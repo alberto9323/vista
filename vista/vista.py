@@ -67,4 +67,8 @@ def fruta():
 def make_shell_context():
 	return dict(db=db, User=User, Role=Role)
 
+
+if __name__ == '__main__':
+	 app.run(host='127.0.0.1', port=8080, debug=True)
+
 	
