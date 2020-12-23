@@ -1,0 +1,31 @@
+{% extends "user.html" %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block content %}
+<div class="page-header">
+<h1>Hello, {% if name %}{{name}}{% else %}Stranger{% endif %}!</h1>
+</div>
+
+
+
+ 
+
+<div class="container">
+ {{ wtf.quick_form(form) }}
+</div>
+
+
+<div class="container">
+<h1> Puntos actractivos</h1>
+<h3> 
+<ul>La administración del proyecto se hace responsable de
+cultivar, cosechar y comercializar el producto. Ellos ya
+cuentan con toda la producción que esta próxima a
+producirse comprometida y vendida mediante contratos
+con su cliente nal, cuando realizan un desarrollo es
+porque ya esta la producción vendida por contratos. </ul>
+<ul> precio piso de
+$230 pesos por caja de producto
+</ul>
+</h3>
+</div>
+{% endblock %}
